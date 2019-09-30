@@ -51,11 +51,8 @@
 </template>
 
 <script>
-import AppDivider from "../components/ui/AppDivider";
 export default {
-  components: {
-    AppDivider
-  }
+  components: {}
 };
 </script>
 

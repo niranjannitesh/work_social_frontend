@@ -30,7 +30,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "~/plugins/charts.js", ssr: false }],
+  plugins: [{ src: "~/plugins/charts.js", ssr: false }, "~/plugins/globals.js"],
   /*
    ** Nuxt.js dev-modules
    */
@@ -44,7 +44,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
+    "portal-vue/nuxt"
   ],
   /*
    ** Axios module configuration

@@ -29,8 +29,12 @@ export default {
 
     const tabList = [];
     tabs.forEach((child, index) => {
-      const { title, titleSlot, disabled } = child.componentOptions.propsData;
-      const content = titleSlot ? this.$slots[titleSlot] : title;
+      const {
+        dataTitle,
+        titleSlot,
+        disabled
+      } = child.componentOptions.propsData;
+      const content = titleSlot ? this.$slots[titleSlot] : dataTitle;
       const isDisabled = disabled === true || disabled === "";
 
       tabList.push(

@@ -316,20 +316,10 @@
 </template>
 
 <script>
-import AppCard from "../components/ui/AppCard";
-import AppDivider from "../components/ui/AppDivider";
-import AppTextarea from "../components/ui/AppTextarea";
-import AppButton from "../components/ui/AppButton";
-import AppTag from "../components/ui/AppTag";
 import VueMarkdown from "vue-markdown";
 
 export default {
   components: {
-    AppCard,
-    AppDivider,
-    AppTextarea,
-    AppButton,
-    AppTag,
     VueMarkdown
   },
   data() {

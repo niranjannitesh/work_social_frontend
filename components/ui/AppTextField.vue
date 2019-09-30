@@ -27,6 +27,7 @@
       :autofocus="autofocus"
       :required="required"
       :disabled="disabled"
+      ref="input"
       @input="$emit('input', $event.target.value)"
     />
     <div
@@ -122,6 +123,11 @@ export default {
     return {
       inputType: this.type
     };
+  },
+  mounted() {
+    if (this.autofocus) {
+      this.$refs.input.focus();
+    }
   },
   methods: {
     clicked: function() {

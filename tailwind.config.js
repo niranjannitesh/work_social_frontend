@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
+      "transparent-25": "rgba(89, 116, 150, 0.25)",
 
       black: "#403D3E",
       white: "#FFF",
@@ -38,7 +39,8 @@ module.exports = {
         100: "#2482fe",
         75: "#A5AFFB",
         25: "#E5E7FA",
-        10: "#d9e7fd"
+        10: "#d9e7fd",
+        5: "#f3f8ff"
       }
     },
     fontFamily: {

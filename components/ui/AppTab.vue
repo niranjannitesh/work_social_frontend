@@ -1,9 +1,9 @@
 <script>
 export default {
-  props: ["title", "titleSlot", "disabled"],
+  props: ["dataTitle", "titleSlot", "disabled"],
   render() {
     return (
-      <div class="app-tabpanel" role="tabpanel">
+      <div class="app-tabpanel" role="tabpanel" title={this.title}>
         {this.$slots.default}
       </div>
     );
