@@ -4,6 +4,9 @@
   "description": "A job portal",
   "author": "Nitesh Kumar Niranjan",
   "private": true,
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
