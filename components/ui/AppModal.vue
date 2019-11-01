@@ -33,6 +33,7 @@ import AppCard from "./AppCard";
 export default {
   props: {
     show: {
+      type: Boolean,
       required: true
     },
     title: {
@@ -82,12 +83,12 @@ export default {
 
 @keyframes modal {
   0% {
-    transform: translateY(-500px);
+    transform: translateY(-500px) scale(1.25);
     opacity: 0;
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
     opacity: 1;
   }
 }
